@@ -1,0 +1,192 @@
+/* core styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+
+}
+
+button {
+    transition: all 2s ease-in-out;
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+/* main header and nave part */
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(251, 250, 250);
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 7%);
+    z-index: 10;
+    opacity: 97%;
+
+} 
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+   
+}
+
+.main-banner {
+    background: url(../images/home-banner.png.webp) no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    min-height: 55.625rem;
+    background-color: darkgreen;
+}
+
+
+
+.main-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-logo img{
+    width: 7.5rem;
+    height: 4rem;
+    margin-right: 2.5rem;
+}
+
+/* .main-nav {
+    display: inline-block;
+    vertical-align: middle;
+  
+} */
+
+.main-nav-item {
+    display: inline-block;
+    padding: 0.9rem;
+    
+}
+.main-nav-item a {
+    color: darkslategray;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.main-nav-item a:hover {
+    color: gray;
+}
+.main-nav-item.active a{
+    color: gray;
+}
+
+
+/* footer section */
+
+.footer {
+    padding: 6rem 0;
+    background-color: darkolivegreen;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 8rem;
+    height: 7rem;
+}
+
+.nav-items {
+    padding-bottom: 1rem;
+}
+.nav-item {
+    display: inline-block;
+    padding: 0 0.7rem;
+}
+
+.nav-item a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #05364d;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.social a {
+    width: 20px;
+    margin-top: 0.8rem;
+
+}
+.social:hover {
+    background: linear-gradient(90deg, #5f805f 0%, #ade5c6 100%);
+}
+
+.fa-twitter {
+    color: darkgreen;
+    font-size: 1.1rem;
+}
+.footer-text {
+    font-size: 0.8rem;
+    color: aliceblue;
+}
+
+
+
+@media only screen and (max-width:991px) {
+    .container {
+        width: 90%;
+    }
+
+    /* main section */
+    .main-banner {
+        background: none;
+        min-height: 40rem;
+    }
+
+
+    .main-nav {
+        display: none;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+
+}
+
+
+@media only screen and (max-width:767px) {
+    .container {
+        width: 96%;
+    }
+
+    
+}
